@@ -89,7 +89,7 @@
           <div class="u-form-group u-form-message">
             <label for="message-9a3b" class="u-label"> Your Comment: </label>
             <textarea placeholder="Enter your comment" rows="4" cols="50" id="message-9a3b" name="C1" class="u-input u-input-rectangle" required=""></textarea>
-	    <input type="submit" value="Submit "name="submit" class="u-form-control-hidden, u-border-none u-btn u-button-style u-custom-color-3 u-hover-custom-color-5 u-btn-2">
+	    <input type="submit" value="Submit "name="submit" class="u-border-none u-btn u-button-style u-custom-color-3 u-hover-custom-color-5 u-btn-2">
           </div>
 <!--           <div class="u-align-left u-form-group u-form-submit"> -->
 <!--             <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-custom-color-3 u-btn-1">Submit</a> -->
@@ -127,7 +127,7 @@
 		  form.addEventListener('submit', e => {
 		    e.preventDefault()
 		    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-		      .then(response => alert("You have successfully submitted.");window.location.href = "Task_2.html";)
+		      .then(response => alert("You have successfully submitted."))
 		      .catch(error => console.error('Error!', error.message))
           })
 	  </script>
