@@ -88,19 +88,15 @@
 		<form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
 		  <div class="u-form-group u-form-message">
 		    <label for="message-9a3b" class="u-label"> Your Comment: </label>
-		    <textarea placeholder="Enter your comment" rows="4" cols="50" id="message-9a3b" name="comment" class="u-input u-input-rectangle" required=""></textarea>
+		    <textarea placeholder="Enter your comment" rows="4" cols="50" id="message-9a3b" name="C2" class="u-input u-input-rectangle" required=""></textarea>
 		  </div>
 		  <div class="u-align-left u-form-group u-form-submit">
-		    <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
-		    <input type="submit" value="submit" class="u-form-control-hidden">
+	            <input type="submit" value="Submit "name="submit" class="u-align-left u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">
 		  </div>
-		  <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-		  <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
 		  <input type="hidden" value="" name="recaptchaResponse">
 		  <input type="hidden" name="formServices" value="5612c96d446c88e0d1638039aea3ceb0">
 		</form>
 	      </div>
-	      <a href="Task_3.html" class="u-align-left u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">submit</a>
 	</div>
       </div>
     </section>
@@ -120,5 +116,19 @@
         <span>HTML Designer</span>
       </a>. 
     </section>
-  
+  	
+	  
+	  <script type="text/javascript">
+		  const scriptURL='https://script.google.com/macros/s/AKfycbzf-KXe1Y_phkWU3gq3Hf83Y3wYSIfJ-qllGkJ1Kz5xqlhidFbjXsc9DPDGVRCu2vot/exec'
+		  const form = document.forms['form']
+          
+		  form.addEventListener('submit', e => {
+		    e.preventDefault()
+		    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		      .then(response => {alert("You have successfully submitted.");
+					window.location.href = "Task_3.html";
+					})
+		      .catch(error => console.error('Error!', error.message))
+          })
+	  </script>
 </body></html>
