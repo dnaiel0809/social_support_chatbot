@@ -107,19 +107,18 @@
     </section>
     
     
-<!--     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-497f"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the Text Element.</p>
-      </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-design" target="_blank">
-        <span>Website Design</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.com/html-website-builder" target="_blank">
-        <span>HTML Designer</span>
-      </a>. 
-    </section> -->
+	  <script type="text/javascript">
+		  const scriptURL='https://script.google.com/macros/s/AKfycbzf-KXe1Y_phkWU3gq3Hf83Y3wYSIfJ-qllGkJ1Kz5xqlhidFbjXsc9DPDGVRCu2vot/exec'
+		  const form = document.forms['form']
+          
+		  form.addEventListener('submit', e => {
+		    e.preventDefault()
+		    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		      .then(response => {alert("You have successfully submitted.");
+					window.location.href = "Task_3.html";
+					})
+		      .catch(error => console.error('Error!', error.message))
+          })
+	  </script>
   
 </body></html>
