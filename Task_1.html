@@ -107,7 +107,8 @@
 
 		  const scriptURL='https://script.google.com/macros/s/AKfycbzf-KXe1Y_phkWU3gq3Hf83Y3wYSIfJ-qllGkJ1Kz5xqlhidFbjXsc9DPDGVRCu2vot/exec'
 		  const form = document.forms['form']
-  		  location.replace(window.location.href+"?PROLIFIC_PID=" + id);
+		  if (window.location.href!= window.location.href+"?PROLIFIC_PID=" + form)
+	  		  location.replace(window.location.href+"?PROLIFIC_PID=" + form);
 
 
 		  form.addEventListener('submit', e => {
