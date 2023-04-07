@@ -111,7 +111,7 @@
 
 		  form.addEventListener('submit', e => {
 		    e.preventDefault()
-		    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		    fetch(scriptURL, { method: 'POST', body: new FormData(form).append("ID", "123abc");})
 		      .then(response => {alert("You have successfully submitted.");
 					window.location.href = "Task_2.html";
 					})
