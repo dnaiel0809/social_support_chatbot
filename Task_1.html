@@ -113,7 +113,9 @@
 		  e.preventDefault()
 		    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		      .then(response => {alert("You have successfully submitted");
-					 console.log(new FormData(form))
+					 for (var pair of new FormData(form).entries()) {
+ 					   console.log(pair[0]+ ', ' + pair[1]); 
+					}
 // 					window.location.href = "Task_2.html";
 					})
 		      .catch(error => console.error('Error!', error.message))
