@@ -110,11 +110,11 @@
 			
 
 		  form.addEventListener('submit', e => {
+		  var formdata = new FormData(form)
+		  formdata.append('ID', '123abc')
 		  e.preventDefault()
-		    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-		      .then(response => {alert("You have successfully submitted");
-					 var formdata = new FormData(form)
-					 formdata.append('ID', '123abc')
+		    fetch(scriptURL, { method: 'POST', body: formdata})
+		      .then(response => {alert("You have successfully submitted.");
 					 for (var pair of formdata.entries()) {
  					   console.log(pair[0]+ ', ' + pair[1]); 
 					}
