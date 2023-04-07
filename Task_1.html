@@ -103,9 +103,13 @@
     
     
 	  <script type="text/javascript">
+		  var id = localStorage.getItem("ID");
+
 		  const scriptURL='https://script.google.com/macros/s/AKfycbzf-KXe1Y_phkWU3gq3Hf83Y3wYSIfJ-qllGkJ1Kz5xqlhidFbjXsc9DPDGVRCu2vot/exec'
 		  const form = document.forms['form']
-          
+  		  location.replace(window.location.href+"?PROLIFIC_PID=" + id);
+
+
 		  form.addEventListener('submit', e => {
 		    e.preventDefault()
 		    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
