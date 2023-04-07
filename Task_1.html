@@ -113,7 +113,7 @@
 		  e.preventDefault()
 		    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		      .then(response => {alert("You have successfully submitted");
-					 console.log(FormData(form))
+					 console.log(new FormData(form))
 // 					window.location.href = "Task_2.html";
 					})
 		      .catch(error => console.error('Error!', error.message))
