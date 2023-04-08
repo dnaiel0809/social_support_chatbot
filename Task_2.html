@@ -129,6 +129,7 @@
 		  form.addEventListener('submit', e => {
 	            var formdata = new FormData(form)
           	    formdata.append('ID', id)
+		    formdata.append('Q', 'C2')
 		    e.preventDefault()
 		    fetch(scriptURL, { method: 'POST', body: formdata})
 		      .then(response => {alert("You have successfully submitted.");
