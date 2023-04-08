@@ -106,12 +106,15 @@
     
     
 	  <script type="text/javascript">
+		  var id = localStorage.getItem("ID");
 		  const scriptURL='https://script.google.com/macros/s/AKfycbzf-KXe1Y_phkWU3gq3Hf83Y3wYSIfJ-qllGkJ1Kz5xqlhidFbjXsc9DPDGVRCu2vot/exec'
 		  const form = document.forms['form']
           
 		  form.addEventListener('submit', e => {
+		    var formdata = new FormData(form)
+		    formdata.append('ID', id)
 		    e.preventDefault()
-		    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		    fetch(scriptURL, { method: 'POST', body: formdata})
 		      .then(response => {alert("You have successfully submitted.");
 					window.location.href = "Post-survey.html";
 					})
