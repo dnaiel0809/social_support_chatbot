@@ -124,10 +124,11 @@
 
 		  const scriptURL='https://script.google.com/macros/s/AKfycbzf-KXe1Y_phkWU3gq3Hf83Y3wYSIfJ-qllGkJ1Kz5xqlhidFbjXsc9DPDGVRCu2vot/exec'
 		  const form = document.forms['form']
-		  var formdata = new FormData(form)
-          	  formdata.append('ID', id)
+		  
 		  
 		  form.addEventListener('submit', e => {
+	            var formdata = new FormData(form)
+          	    formdata.append('ID', id)
 		    e.preventDefault()
 		    fetch(scriptURL, { method: 'POST', body: formdata})
 		      .then(response => {alert("You have successfully submitted.");
