@@ -71,24 +71,33 @@
       </div>
     </section>
     <script type="text/javascript">
-	var data = "123abc";
+// 	var data = "123abc";
 	localStorage.setItem("ID", data);
+	const scriptURL='https://script.google.com/macros/s/AKfycbzsPOC9Q0_kxMQkP8ZJo2c8lSCxQN1BiLFeC9aVMCUTpPhCV4baXCkwuU7cpLMiGnQT/exec'
+	var formdata = new FormData()
+	var ID = GetURLParameter('PROLIFIC_PID');
+	formdata.append("ID", ID);
+	formdata.append("function", "register");
 
-    //Redirect the user
-//     location.replace(window.location.href+"?PROLIFIC_PID=" + data);
-//     function GetURLParameter(sParam){
-// 	    var sPageURL = window.location.search.substring(1);
-// 	    var sURLVariables = sPageURL.split('&');
-// 	    for (var i = 0; i < sURLVariables.length; i++) 
-// 	    {
-// 		var sParameterName = sURLVariables[i].split('=');
-// 		if (sParameterName[0] == sParam) 
-// 		{
-// 		    return sParameterName[1];
-// 		}
-// 	    }
-// 	}
-// 	var ID = GetURLParameter('PROLIFIC_PID');
+	e.preventDefault()
+    	fetch(scriptURL, { method: 'POST', body: formdata})
+	      .then(response => {console.log("success");})
+	      .catch(error => console.error('Error!', error.message))
+
+
+    function GetURLParameter(sParam){
+	    var sPageURL = window.location.search.substring(1);
+	    var sURLVariables = sPageURL.split('&');
+	    for (var i = 0; i < sURLVariables.length; i++) 
+	    {
+		var sParameterName = sURLVariables[i].split('=');
+		if (sParameterName[0] == sParam) 
+		{
+		    return sParameterName[1];
+		}
+	    }
+	}
+
 
     </script>					     
 <!--     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-497f"><div class="u-clearfix u-sheet u-sheet-1">
