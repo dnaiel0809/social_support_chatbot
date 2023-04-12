@@ -72,10 +72,11 @@
     </section>
     <script type="text/javascript">
 // 	var data = "123abc";
-	localStorage.setItem("ID", data);
+
 	const scriptURL='https://script.google.com/macros/s/AKfycbzsPOC9Q0_kxMQkP8ZJo2c8lSCxQN1BiLFeC9aVMCUTpPhCV4baXCkwuU7cpLMiGnQT/exec'
 	var formdata = new FormData()
 	var ID = GetURLParameter('PROLIFIC_PID');
+	localStorage.setItem("ID", ID);
 	formdata.append("ID", ID);
 	formdata.append("function", "register");
 
