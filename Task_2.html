@@ -133,7 +133,10 @@
 		    e.preventDefault()
 		    fetch(scriptURL, { method: 'POST', body: formdata})
 		      .then(response => {alert("You have successfully submitted.");
-					window.location.href = "Task_3.html";
+					// window.location.href = "Task_3.html";
+          $(function(){
+              $("#includedContent").load("Task_3.html"); 
+          });
 					})
 		      .catch(error => console.error('Error!', error.message))
           })
