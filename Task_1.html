@@ -116,7 +116,9 @@
 		  formdata.append('ID', id)
 		  formdata.append('Q', 'C1')
 		  e.preventDefault()
-		    fetch(scriptURL, { method: 'POST', body: formdata})
+		    fetch(scriptURL, { method: 'POST', body: formdata,headers: {
+        "Content-Type": "text/plain;charset=utf-8",
+      },})
 		      .then(response => {alert("You have successfully submitted.");
 // 					 for (var pair of formdata.entries()) {
 //  					   console.log(pair[0]+ ', ' + pair[1]); 
