@@ -131,7 +131,7 @@
           	    formdata.append('ID', id)
 		    formdata.append('Q', 'C2')
 		    e.preventDefault()
-		    fetch(scriptURL, { method: 'POST', body: formdata})
+		    fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
 		      .then(response => {alert("You have successfully submitted.");
 					// window.location.href = "Task_3.html";
           $(function(){

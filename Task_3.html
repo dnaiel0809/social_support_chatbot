@@ -115,7 +115,7 @@
 		    formdata.append('Q', 'C3')
 
 		    e.preventDefault()
-		    fetch(scriptURL, { method: 'POST', body: formdata})
+		    fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
 		      .then(response => {alert("You have successfully submitted.");
 					window.location.href = "Post-survey.html";
 					})
