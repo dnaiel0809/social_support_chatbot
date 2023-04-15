@@ -116,7 +116,7 @@
 		  formdata.append('ID', id)
 		  formdata.append('Q', 'C1')
 		  e.preventDefault()
-		    fetch(scriptURL, { method: 'POST', body: formdata,headers: {
+		    fetch(scriptURL, { redirect: "follow", method: 'POST', body: formdata,headers: {
         "Content-Type": "text/plain;charset=utf-8",
       },})
 		      .then(response => {alert("You have successfully submitted.");
