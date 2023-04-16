@@ -7,7 +7,7 @@
 
     form_2.addEventListener('submit', e => {
         console.log("button")
-        var formdata = new FormData(form)
+        var formdata = new FormData(form_2)
         formdata.append('ID', id)
         formdata.append('Q', 'C2')
         console.log("formdata")
