@@ -25,8 +25,8 @@
     
 // });
 
-$(document).on('click', '#submit_3', function() {
-    $('#submit_3').click(function() {
+$(document).on('click', '#submit_2', function() {
+    $('#submit_2').click(function() {
         console.log('Button clicked!');
         // Other code here
       });
