@@ -1,10 +1,10 @@
 // window.addEventListener("DOMContentLoaded", (event) => {
     var id = localStorage.getItem("ID");
 
-    // const scriptURL='https://script.google.com/macros/s/AKfycbzsPOC9Q0_kxMQkP8ZJo2c8lSCxQN1BiLFeC9aVMCUTpPhCV4baXCkwuU7cpLMiGnQT/exec'
+    const scriptURL='https://script.google.com/macros/s/AKfycbzsPOC9Q0_kxMQkP8ZJo2c8lSCxQN1BiLFeC9aVMCUTpPhCV4baXCkwuU7cpLMiGnQT/exec'
     const form_2 = document.forms['form_2']
     console.log("form_2:"+form_2)
-
+    
     form_2.addEventListener('submit', e => {
         console.log("button")
         var formdata = new FormData(form_2)
@@ -16,7 +16,7 @@
             .then(response => {alert("You have successfully submitted.");
                 // window.location.href = "Task_3.html";
         $(function(){
-            $("#body").load("Task_3.html"); 
+            $("#includedContent").load("Task_3.html"); 
         });
         $.getScript("Task_3.js");
         })
