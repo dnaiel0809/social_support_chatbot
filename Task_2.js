@@ -4,7 +4,7 @@ var id = localStorage.getItem("ID");
 // const form = document.forms['form']
 
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit_2', e => {
     console.log("button")
     var formdata = new FormData(form)
     formdata.append('ID', id)
