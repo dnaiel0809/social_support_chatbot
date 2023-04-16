@@ -115,6 +115,7 @@
 		  var formdata = new FormData(form)
 		  formdata.append('ID', id)
 		  formdata.append('Q', 'C1')
+      console.log("form")
 		  e.preventDefault()
 		    fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
 		      .then(response => {alert("You have successfully submitted.");
