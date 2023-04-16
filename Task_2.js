@@ -1,7 +1,7 @@
 var id = localStorage.getItem("ID");
 console.log("task2")
 // const scriptURL='https://script.google.com/macros/s/AKfycbzsPOC9Q0_kxMQkP8ZJo2c8lSCxQN1BiLFeC9aVMCUTpPhCV4baXCkwuU7cpLMiGnQT/exec'
-const form_2 = document.forms['form_2']
+var form_2 = document.forms['form_2']
 console.log("form_2:"+form_2)
 
 form_2.addEventListener('submit', e => {
@@ -15,10 +15,13 @@ form_2.addEventListener('submit', e => {
         .then(response => {alert("You have successfully submitted.");
             // window.location.href = "Task_3.html";
     $(function(){
-        $("#includedContent").load("Task_3.html"); 
+        $("#includedContent").load("Task_3.html",function () {
+          $.getScript("Task_3.js");
+        }); 
     });
-    $.getScript("Task_3.js");
     })
+
+    
     .catch(error => console.error('Error!', error.message))
 })
 
