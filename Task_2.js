@@ -1,6 +1,6 @@
 // window.addEventListener("DOMContentLoaded", (event) => {
     var id = localStorage.getItem("ID");
-
+    console.log("task2")
     const scriptURL='https://script.google.com/macros/s/AKfycbzsPOC9Q0_kxMQkP8ZJo2c8lSCxQN1BiLFeC9aVMCUTpPhCV4baXCkwuU7cpLMiGnQT/exec'
     const form_2 = document.forms['form_2']
     console.log("form_2:"+form_2)
