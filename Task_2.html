@@ -92,7 +92,7 @@
 		  </div>
 		  <div class="u-align-left u-form-group u-form-submit">
             		<a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
-            		<input type="submit" value="submit" name="submit" class="u-form-control-hidden">
+            		<input type="submit" value="submit" name="submit" id="submit_2" class="u-form-control-hidden">
           	  </div>
 		  <input type="hidden" value="" name="recaptchaResponse">
 		  <input type="hidden" name="formServices" value="5612c96d446c88e0d1638039aea3ceb0">
@@ -135,7 +135,7 @@
 		      .then(response => {alert("You have successfully submitted.");
 					// window.location.href = "Task_3.html";
           $(function(){
-              $("#body").load("Task_3.html"); 
+              $("#submit_3").load("Task_3.html"); 
           });
 					})
 		      .catch(error => console.error('Error!', error.message))
