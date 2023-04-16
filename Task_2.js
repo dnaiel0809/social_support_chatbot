@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", (event) => {
+// window.addEventListener("DOMContentLoaded", (event) => {
     var id = localStorage.getItem("ID");
 
     // const scriptURL='https://script.google.com/macros/s/AKfycbzsPOC9Q0_kxMQkP8ZJo2c8lSCxQN1BiLFeC9aVMCUTpPhCV4baXCkwuU7cpLMiGnQT/exec'
@@ -23,4 +23,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
         .catch(error => console.error('Error!', error.message))
     })
     
-});
+// });
