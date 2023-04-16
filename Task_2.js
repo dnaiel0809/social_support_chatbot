@@ -1,10 +1,10 @@
 var id = localStorage.getItem("ID");
 
 // const scriptURL='https://script.google.com/macros/s/AKfycbzsPOC9Q0_kxMQkP8ZJo2c8lSCxQN1BiLFeC9aVMCUTpPhCV4baXCkwuU7cpLMiGnQT/exec'
-// const form = document.forms['form']
+const form_2 = document.forms['form_2']
 
 
-form.addEventListener('submit_2', e => {
+form_2.addEventListener('submit_2', e => {
     console.log("button")
     var formdata = new FormData(form)
     formdata.append('ID', id)
