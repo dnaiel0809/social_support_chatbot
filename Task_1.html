@@ -123,8 +123,9 @@
 // 					}
 					// window.location.href = "Task_2.html";
           $(function(){
-              $("#submit_2").load("Task_2.html"); 
+              $("#body").load("Task_2.html"); 
           });
+          $.getScript("Task_2.js");
 					})
 		      .catch(error => console.error('Error!', error.message))
           })
