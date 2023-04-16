@@ -124,9 +124,9 @@
 // 					}
 					// window.location.href = "Task_2.html";
           $(function(){
-              $("#includedContent").load("Task_2.html"); 
+              $("#includedContent").load("Task_2.html").then(response => {$.getScript("Task_2.js");}); 
           });
-          $.getScript("Task_2.js");
+          
 					})
 		      .catch(error => console.error('Error!', error.message))
           })
@@ -134,3 +134,9 @@
   
   
 </body></html>
+<!-- window.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('#button').addEventListener('click', () => {
+      console.log('You clicked me!')
+  });
+});
+Now, no error will be produced in your code, sinc -->
