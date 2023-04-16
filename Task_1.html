@@ -124,11 +124,10 @@
 // 					}
 					// window.location.href = "Task_2.html";
           $(function(){
-              $("#includedContent").load("Task_2.html").then(function (content) {
-                $.getScript("Task_2.js");})
-              
+              $("#includedContent").load("Task_2.html",function () {
+                $.getScript("Task_2.js");
+              }); 
           });
-          
 					})
 		      .catch(error => console.error('Error!', error.message))
           })
