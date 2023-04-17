@@ -1,6 +1,6 @@
  .u-section-1 {
   background-image: none;
-  min-height: 946px;
+  min-height: 990px;
 }
 
 .u-section-1 .u-group-1 {
@@ -18,7 +18,7 @@
 
 .u-section-1 .u-image-1 {
   width: 405px;
-  height: 59px;
+  height: 61px;
   margin: 16px auto 0 20px;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .u-section-1 .u-layout-cell-1 {
-  min-height: 401px;
+  min-height: 467px;
   background-image: none;
 }
 
@@ -48,7 +48,7 @@
   width: 927px;
   min-height: 36px;
   height: auto;
-  margin: 8px auto -2px -2px;
+  margin: 75px auto 0 -2px;
 }
 
 .u-section-1 .u-container-layout-3 {
@@ -102,7 +102,7 @@
 }
 
 .u-section-1 .u-group-4 {
-  min-height: 330px;
+  min-height: 374px;
   height: auto;
   width: 190px;
   box-shadow: 2px 7px 12px 0px rgba(0,0,0,0.4);
@@ -122,7 +122,7 @@
 
 .u-section-1 .u-image-2 {
   width: 169px;
-  height: 73px;
+  height: 88px;
   margin: 8px auto 0;
 }
 
@@ -133,27 +133,32 @@
 
 .u-section-1 .u-text-10 {
   font-weight: 700;
-  margin: 20px 11px 0;
+  margin: 11px 11px 0;
 }
 
 .u-section-1 .u-form-1 {
   height: 239px;
-  margin-top: 20px;
+  margin-top: 16px;
   margin-bottom: 0;
   margin-left: calc(((100% - 1140px) / 2));
   width: 927px;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
 }
 
 .u-section-1 .u-btn-2 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin: 16px auto 60px calc(((100% - 1140px) / 2) + 16px);
+  background-image: none;
+  margin: 0 auto 60px calc(((100% - 1140px) / 2));
 }
 
 @media (max-width: 1199px) {
    .u-section-1 {
-    min-height: 876px;
+    min-height: 908px;
   }
 
   .u-section-1 .u-group-1 {
@@ -166,7 +171,7 @@
   }
 
   .u-section-1 .u-layout-cell-1 {
-    min-height: 331px;
+    min-height: 385px;
   }
 
   .u-section-1 .u-text-1 {
@@ -237,7 +242,7 @@
 
 @media (max-width: 991px) {
    .u-section-1 {
-    min-height: 645px;
+    min-height: 623px;
   }
 
   .u-section-1 .u-layout-wrap-1 {
@@ -316,7 +321,7 @@
 
 @media (max-width: 767px) {
    .u-section-1 {
-    min-height: 745px;
+    min-height: 723px;
   }
 
   .u-section-1 .u-container-layout-1 {
@@ -364,7 +369,7 @@
 @media (max-width: 575px) {
   .u-section-1 .u-image-1 {
     width: 320px;
-    height: 47px;
+    height: 48px;
     margin-left: 0;
   }
 

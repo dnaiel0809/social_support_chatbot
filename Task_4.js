@@ -1,26 +1,22 @@
 var id = localStorage.getItem("ID");
-console.log("task3")
+console.log("task4")
 // const scriptURL='https://script.google.com/macros/s/AKfycbzsPOC9Q0_kxMQkP8ZJo2c8lSCxQN1BiLFeC9aVMCUTpPhCV4baXCkwuU7cpLMiGnQT/exec'
-var form_3 = document.forms['form_3']
-console.log("form_3:"+form_3)
+var form_4 = document.forms['form_4']
+console.log("form_4:"+form_4)
 
-form_3.addEventListener('submit', e => {
+form_4.addEventListener('submit', e => {
     console.log("button")
-    var formdata = new FormData(form_3)
+    var formdata = new FormData(form_4)
     formdata.append('ID', id)
-    formdata.append('Q', 'C3')
+    formdata.append('Q', 'C4')
     console.log("formdata")
     e.preventDefault()
-    fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
-        .then(response => {alert("You have successfully submitted.");
-    $(function(){
-        $("#includedContent").load("Task_4.html",function () {
-          $.getScript("Task_4.js");
-        }); 
-    });
-    })
-
     
+
+    fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
+    .then(response => {alert("You have successfully submitted.");
+          window.location.href = "Post-survey.html";
+          })
     .catch(error => console.error('Error!', error.message))
 })
 
