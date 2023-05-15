@@ -12,7 +12,7 @@ form_3.addEventListener('submit', e => {
     console.log("formdata")
     e.preventDefault()
     fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
-        .then(response => {alert("You have successfully submitted.");
+        .then(response => {alert("You have successfully submitted. By clicking the button \"I\'ve submitted task,\" let the chatbot know you are moving to the next task.");
     $(function(){
         $("#includedContent").load("Task_4.html",function () {
           $.getScript("Task_4.js");
