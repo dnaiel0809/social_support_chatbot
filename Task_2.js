@@ -12,7 +12,7 @@ form_2.addEventListener('submit', e => {
     console.log("formdata")
     e.preventDefault()
     fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
-        .then(response => {alert("You have successfully submitted. You have successfully submitted. By clicking the button \"I\'ve submitted task,\" let the chatbot know you are moving to the next task.");
+        .then(response => {alert("You have successfully submitted. By clicking the button \"I\'ve submitted task,\" let the chatbot know you are moving to the next task.");
             // window.location.href = "Task_3.html";
     $(function(){
         $("#includedContent").load("Task_3.html",function () {
