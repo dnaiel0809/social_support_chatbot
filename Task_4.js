@@ -14,7 +14,7 @@ form_4.addEventListener('submit', e => {
     
 
     fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
-    .then(response => {alert("You have successfully submitted. By clicking the button \"I've submitted task,\" let the chatbot know you are moving to the next task.");
+    .then(response => {alert("You have successfully submitted. By clicking the button \"I\'ve submitted task,\" let the chatbot know you are moving to the next task.");
           window.location.href = "Post-survey.html";
           })
     .catch(error => console.error('Error!', error.message))
