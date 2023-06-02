@@ -18,7 +18,7 @@ e.preventDefault()
     // window.location.href = "Task_2.html";
     $(function(){
         $("#includedContent").load(next+".html",function () {
-          $.getScript(next+".js");
+//           $.getScript(next+".js");
         }); 
     });
     })
