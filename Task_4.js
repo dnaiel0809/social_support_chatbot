@@ -24,7 +24,11 @@ fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
     
 })
 
-
+// fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
+//     .then(response => {alert("You have successfully submitted. Well done.");
+//           window.location.href = "Post-survey.html";
+//           })
+//     .catch(error => console.error('Error!', error.message))
 
 // $(document).on('click', '#submit_2', function() {
 //     $('#submit_2').click(function() {
