@@ -11,7 +11,7 @@ formdata.append('Q', 'C1')
 
 e.preventDefault()
   fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
-    .then(response => {alert("You have successfully submitted. By clicking the button \"I\'ve submitted task,\" let the chatbot know you are moving to the next task.");
+            .then(response => {alert(next=='Post-survey'?"You have successfully submitted. Well done.":"You have successfully submitted. By clicking the button \"I\'ve submitted task,\" let the chatbot know you are moving to the next task.");
 // 					 for (var pair of formdata.entries()) {
 //  					   console.log(pair[0]+ ', ' + pair[1]); 
 // 					}
