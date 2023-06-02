@@ -1,6 +1,7 @@
 var id = localStorage.getItem("ID");
 console.log("task2")
-// const scriptURL='https://script.google.com/macros/s/AKfycbzsPOC9Q0_kxMQkP8ZJo2c8lSCxQN1BiLFeC9aVMCUTpPhCV4baXCkwuU7cpLMiGnQT/exec'
+var next = localStorage.getItem("order2")
+const scriptURL='https://script.google.com/macros/s/AKfycbwFEjvw0g-D76hXmh3FqvkhpPWM65RaSqUNeGEv6WLYenfydBd9HrZM7RsseKVDZRwB/exec'
 var form_2 = document.forms['form_2']
 console.log("form_2:"+form_2)
 
@@ -15,8 +16,8 @@ form_2.addEventListener('submit', e => {
         .then(response => {alert("You have successfully submitted. By clicking the button \"I\'ve submitted task,\" let the chatbot know you are moving to the next task.");
             // window.location.href = "Task_3.html";
     $(function(){
-        $("#includedContent").load("Task_3.html",function () {
-          $.getScript("Task_3.js");
+        $("#includedContent").load(next+".html",function () {
+          $.getScript(next+".js");
         }); 
     });
     })
