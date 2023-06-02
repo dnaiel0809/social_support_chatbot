@@ -13,12 +13,15 @@ form_4.addEventListener('submit', e => {
     console.log("formdata")
     e.preventDefault()
     
-
-    fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
-    .then(response => {alert("You have successfully submitted. Well done.");
-          window.location.href = "Post-survey.html";
-          })
-    .catch(error => console.error('Error!', error.message))
+fetch(scriptURL, { mode: "no-cors",method: 'POST', body: formdata})
+        .then(response => {alert(next=='Post-survey'?"You have successfully submitted. Well done.":"You have successfully submitted. By clicking the button \"I\'ve submitted task,\" let the chatbot know you are moving to the next task.");
+    $(function(){
+        $("#includedContent").load(next+".html",function () {
+//           $.getScript(next+".js");
+        }); 
+    });
+    })
+    
 })
 
 
