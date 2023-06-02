@@ -110,7 +110,7 @@
           arr[i] = arr[j];
           arr[j] = temp;
       	}
-	  
+	arr.push('Post-survey')
 	const scriptURL='https://script.google.com/macros/s/AKfycbwFEjvw0g-D76hXmh3FqvkhpPWM65RaSqUNeGEv6WLYenfydBd9HrZM7RsseKVDZRwB/exec'
 	var formdata = new FormData()
 	var ID = GetURLParameter('PROLIFIC_PID');
@@ -119,10 +119,15 @@
 	localStorage.setItem("order2", arr[1]);
 	localStorage.setItem("order3", arr[2]);
 	localStorage.setItem("order4", arr[3]);
+	localStorage.setItem("order4", arr[4]);
 	  
 	formdata.append("ID", ID);
 	formdata.append("function", "register");
-	formdata.append("order", arr);
+	formdata.append("order1", arr[0]);
+	formdata.append("order2", arr[1]);
+	formdata.append("order3", arr[2]);
+	formdata.append("order4", arr[3]);
+	formdata.append("order5", arr[4]);
     	fetch(scriptURL, { method: 'POST', body: formdata})
 	      .then(response => {console.log("success");})
 	      .catch(error => console.error('Error!', error.message))
