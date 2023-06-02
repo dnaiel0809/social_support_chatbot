@@ -103,14 +103,26 @@
     </section>
   <script type="text/javascript">
 // 	var data = "123abc";
-
+	var arr = ['Task_1', 'Task_2', 'Task_3', 'Task_4']
+        for (var i = arr.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
+      	}
+	  
 	const scriptURL='https://script.google.com/macros/s/AKfycbwsfvgfqzvEoHAxngCgZQBZZZ_FXacFOMiKrGCnf-SHQBkOWpubNTM431at4Z3RzCvl/exec'
 	var formdata = new FormData()
 	var ID = GetURLParameter('PROLIFIC_PID');
 	localStorage.setItem("ID", ID);
+	localStorage.setItem("order1", arr[0]);	
+	localStorage.setItem("order2", arr[1]);
+	localStorage.setItem("order3", arr[2]);
+	localStorage.setItem("order4", arr[3]);
+	  
 	formdata.append("ID", ID);
 	formdata.append("function", "register");
-
+	formdata.append("order", arr);
     	fetch(scriptURL, { method: 'POST', body: formdata})
 	      .then(response => {console.log("success");})
 	      .catch(error => console.error('Error!', error.message))
