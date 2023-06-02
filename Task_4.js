@@ -1,6 +1,7 @@
 var id = localStorage.getItem("ID");
 console.log("task4")
-// const scriptURL='https://script.google.com/macros/s/AKfycbzsPOC9Q0_kxMQkP8ZJo2c8lSCxQN1BiLFeC9aVMCUTpPhCV4baXCkwuU7cpLMiGnQT/exec'
+var next = localStorage.getItem("order4")
+const scriptURL='https://script.google.com/macros/s/AKfycbwFEjvw0g-D76hXmh3FqvkhpPWM65RaSqUNeGEv6WLYenfydBd9HrZM7RsseKVDZRwB/exec'
 var form_4 = document.forms['form_4']
 console.log("form_4:"+form_4)
 
