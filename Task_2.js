@@ -17,7 +17,7 @@ form_2.addEventListener('submit', e => {
             // window.location.href = "Task_3.html";
     $(function(){
         $("#includedContent").load(next+".html",function () {
-          $.getScript(next+".js");
+//           $.getScript(next+".js");
         }); 
     });
     })
