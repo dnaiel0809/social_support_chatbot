@@ -16,7 +16,7 @@ form_3.addEventListener('submit', e => {
         .then(response => {alert("You have successfully submitted. By clicking the button \"I\'ve submitted task,\" let the chatbot know you are moving to the next task.");
     $(function(){
         $("#includedContent").load(next+".html",function () {
-          $.getScript(next+".js");
+//           $.getScript(next+".js");
         }); 
     });
     })
