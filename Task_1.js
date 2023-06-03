@@ -1,5 +1,8 @@
 var id = localStorage.getItem("ID")
-var next = localStorage.getItem("order2")
+var index = localStorage.getItem("index")
+var next = localStorage.getItem("order"+index)
+localStorage.setItem("index", index+1);
+
 var scriptURL='https://script.google.com/macros/s/AKfycbwFEjvw0g-D76hXmh3FqvkhpPWM65RaSqUNeGEv6WLYenfydBd9HrZM7RsseKVDZRwB/exec'
 const form = document.forms['form']
 
