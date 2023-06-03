@@ -2,7 +2,7 @@ var id = localStorage.getItem("ID");
 var index = localStorage.getItem("index")
 var next = localStorage.getItem("order"+index)
 localStorage.setItem("index", String(Number(index)+1));
-
+console.log("next: "+next)
 var scriptURL='https://script.google.com/macros/s/AKfycbwFEjvw0g-D76hXmh3FqvkhpPWM65RaSqUNeGEv6WLYenfydBd9HrZM7RsseKVDZRwB/exec'
 var form_2 = document.forms['form_2']
 console.log("form_2:"+form_2)
