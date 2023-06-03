@@ -1,6 +1,7 @@
 var id = localStorage.getItem("ID");
 var index = localStorage.getItem("index")
 var next = localStorage.getItem("order"+index)
+console.log("next: "+next)
 localStorage.setItem("index", String(Number(index)+1));
 
 var scriptURL='https://script.google.com/macros/s/AKfycbwFEjvw0g-D76hXmh3FqvkhpPWM65RaSqUNeGEv6WLYenfydBd9HrZM7RsseKVDZRwB/exec'
